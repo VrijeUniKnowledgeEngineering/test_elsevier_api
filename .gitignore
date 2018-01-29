@@ -9,3 +9,4 @@ test_elsapy.py
 /dist
 /build
 /elsapy.egg-info
+.idea/
