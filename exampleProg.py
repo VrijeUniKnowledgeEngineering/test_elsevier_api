@@ -18,19 +18,42 @@ client = ElsClient(config['apikey'])
 ## Author example
 # Initialize author with uri
 my_auth = ElsAuthor(
-        uri = 'https://api.elsevier.com/content/author/author_id/56923985200')
+        uri = 'https://api.elsevier.com/content/author/author_id/7004322609')
+
+response = client.exec_request('https://api.elsevier.com/content/author/author_id/7004322609')
+import pprint
+pprint.pprint(response)
+
+
+response = client.exec_request('http://api.elsevier.com/content/search/scopus?query=au-id%287004322609%29')
+pprint.pprint(response)
+
+quit()
+
 # Read author data, then write to disk
 if my_auth.read(client):
     print ("my_auth.full_name: ", my_auth.full_name)
     print ("my_auth.last_name:", my_auth.last_name)
     print ("my_auth.id: ", my_auth.id)
     print ("my_auth.uri: ", my_auth.uri)
+    # print('there are ', len(my_auth.doc_list), ' papers published by this author')
 
-    my_auth.read_docs(client)
+    # my_auth.read_docs(client)
+    my_auth.read(client)
 
-    # print ("my_auth keys: ", my_auth.data.keys())
+    # dict_keys(['@status', '@_fa', 'coredata', 'affiliation-current', 'affiliation-history', 'subject-areas',
+               # 'author-profile'])
+    print ("\n my_auth keys: \n", my_auth.data.keys())
+    print ('\n my_auth data status\n', my_auth.data['@status'])
+    print ('\n my_auth data fa\n', my_auth.data['@_fa'])
+    print ('\n my_auth data coredata\n', my_auth.data['coredata'])
+    print ('\n my_auth data affiliation-current\n', my_auth.data['affiliation-current'])
+    print ('\n my_auth data affiliation-history\n', my_auth.data['affiliation-history'])
+    print ('\n my_auth data subject-areas\n', my_auth.data['subject-areas'])
+    print ('\n my_auth data author-profile\n', my_auth.data['author-profile']) # this one is very complicated
+
     # my_auth.write()
-    # print ("history: ", my_auth.data['affiliation-history'])
+
 else:
     print ("Read author failed.")
 
