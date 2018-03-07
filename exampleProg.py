@@ -27,8 +27,7 @@ my_auth = ElsAuthor(
         uri = 'https://api.elsevier.com/content/author/author_id/7004322609')
 
 
-resp = client.exec_request('https://api.elsevier.com/content/author/author_id/7004322609?apiKey=7f59af901d2d86f78a1fd60c1bf9426a')
-# resp2 = client.exec_request('https://api.elsevier.com/content/author/author_id/7004322609?apiKey=2af6a3b4ba3f250031381ec4c63c1c5e')
+resp = client.exec_request('https://api.elsevier.com/content/author/author_id/7004322609?apiKey=2af6a3b4ba3f250031381ec4c63c1c5e')
 
 import pprint
 pprint.pprint(resp)
@@ -49,10 +48,15 @@ pprint.pprint(resp)
 # print(resp['author-retrieval-response'][0]['subject-areas']['subject-area'])
 # #Publication Range
 # print(resp['author-retrieval-response'][0]['author-profile']['publication-range'])
+
 # Journal History
 print(resp['author-retrieval-response'][0]['author-profile']['journal-history']['journal'])
 pprint.pprint(resp['author-retrieval-response'][0]['author-profile']['journal-history']['journal'])
 pprint.pprint(resp['author-retrieval-response'][0]['author-profile']['journal-history']['journal'][0]['sourcetitle'])
+
+
+#Journal History
+# print(resp['author-retrieval-response'][0]['author-profile']['journal-history']['journal'])
 
 # print(resp['author-retrieval-response'][0]['author-profile'])
 
