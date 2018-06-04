@@ -1,0 +1,223 @@
+@prefix : <#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/currentProject
+foaf:currentProject rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/depiction
+foaf:depiction rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/family_name
+foaf:family_name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/givenname
+foaf:givenname rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/interest
+foaf:interest rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+foaf:mbox rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/nick
+foaf:nick rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/status
+foaf:status rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/title
+foaf:title rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/topic_interest
+foaf:topic_interest rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/workplaceHomepage
+foaf:workplaceHomepage rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  file:/Users/finnpotason/Programming/FOAF/krr.rdf#albert
+<file:/Users/finnpotason/Programming/FOAF/krr.rdf#albert> rdf:type owl:NamedIndividual ,
+                                                                   foaf:Person ;
+                                                          foaf:currentProject "CLARIAH" ,
+                                                                              "Linked Data APIs" ,
+                                                                              "MIDI Linked Data" ;
+                                                          foaf:depiction <https://www.albertmeronyo.org/wp-content/uploads/2017/01/L_10a-750x804.jpg> ;
+                                                          foaf:family_name "Meroño Peñuela" ;
+                                                          foaf:givenname "Albert" ;
+                                                          foaf:homepage <https://www.albertmeronyo.org/> ;
+                                                          foaf:interest "knowledge access" ,
+                                                                        "linked data" ,
+                                                                        "semantic music" ;
+                                                          foaf:mbox "albert.merono@vu.nl" ;
+                                                          foaf:status "postdoc" ;
+                                                          foaf:title "Dr." ;
+                                                          foaf:topic_interest "I am a postdoctoral researcher at the Knowledge Representation & Reasoning Group of the Vrije Universiteit Amsterdam. I investigate the representation, integration, and access of non-verbal knowledge, such as historical objects, musical sheets, and statistical registers. I am currently involved in CLARIAH, a Dutch Science Foundation (NWO) project that aims at building a distributed infrastructure for the humanities and social sciences. I completed my PhD in 2016, with the thesis Refining Statistical Data on the Web, under the supervision of Frank van Harmelen, Stefan Schlobach and Andrea Scharnhorst." .
+
+
+###  file:/Users/finnpotason/Programming/FOAF/krr.rdf#ali
+<file:/Users/finnpotason/Programming/FOAF/krr.rdf#ali> rdf:type owl:NamedIndividual ,
+                                                                foaf:Person ;
+                                                       foaf:currentProject "RISIS" ,
+                                                                           "SlideWiki" ;
+                                                       foaf:depiction <http://ali1k.com/imgs/ali_smile.jpg> ;
+                                                       foaf:family_name "Khalili" ;
+                                                       foaf:givenname "Ali" ;
+                                                       foaf:homepage <http://ali1k.com/> ;
+                                                       foaf:interest "human-computer interaction" ,
+                                                                     "linked data" ,
+                                                                     "natural language processing" ,
+                                                                     "semantic web" ,
+                                                                     "user interface" ;
+                                                       foaf:mbox "a.khalili@vu.nl" ;
+                                                       foaf:status "postdoc" ;
+                                                       foaf:title "Dr." ;
+                                                       foaf:topic_interest "My name is Ali Khalili. I am a Semantic Web and HCI researcher and enthusiast. My main research interests lie in user interfaces and applications of the Semantic Web technologies. My PhD thesis focused on a semantics-based user interface model for content annotation, authoring and exploration. I devised the WYSIWYM (What You See Is What You Mean) UI model to deal with semantically-enriched content. I have worked as a Web designer and developer for several years and have expertise in different Web technologies like PHP, JavaScript, NodeJS, etc. Application such as LD-R, RDFaCE, SlideWiki and conTEXT are some examples of my development work. " .
+
+
+###  file:/Users/finnpotason/Programming/FOAF/krr.rdf#annette
+<file:/Users/finnpotason/Programming/FOAF/krr.rdf#annette> rdf:type owl:NamedIndividual ,
+                                                                    foaf:Person ;
+                                                           foaf:currentProject "NO IDEA" ;
+                                                           foaf:depiction <https://www.cs.vu.nl/en/Images/Teije_Annette_ten_tcm210-543587.jpg> ;
+                                                           foaf:family_name "ten Teije" ;
+                                                           foaf:givenname "Annette" ;
+                                                           foaf:homepage <http://www.cs.vu.nl/~annette/> ;
+                                                           foaf:interest "approximate reasoning" ,
+                                                                         "configuration of reasoning methods" ,
+                                                                         "diagnosis" ,
+                                                                         "formalisation of medical knowledge" ,
+                                                                         "medical guideline" ,
+                                                                         "medical ontology" ,
+                                                                         "medical protocol" ,
+                                                                         "semantic web" ;
+                                                           foaf:mbox "annette@cs.vu.nl" ;
+                                                           foaf:status "associate professor" ;
+                                                           foaf:title "Dr." ;
+                                                           foaf:topic_interest "Annette ten Teije is an associate professor at the Vrije Universiteit Amsterdam. She obtained a degree in Computer Engineering in 1991 and spent a year in the computing industry before starting work on her PhD. She earned a PhD (1997) from the University of Amsterdam (SWI) for her thesis entitled \"Automated configuration of problem solving methods in diagnosis\". She moved to the Vrije Universiteit Amsterdam in 2002. " .
+
+
+###  file:/Users/finnpotason/Programming/FOAF/krr.rdf#eva
+<file:/Users/finnpotason/Programming/FOAF/krr.rdf#eva> rdf:type owl:NamedIndividual ,
+                                                                foaf:Person ;
+                                                       foaf:currentProject "Amsterdam Data Science" ;
+                                                       foaf:depiction <http://amsterdamdatascience.nl/wp-content/uploads/sites/12/2016/03/AAEAAQAAAAAAAAUeAAAAJGQyOTk5NmZiLWIyYTYtNDZhYy04ODNjLTRlNzk0YjUzOTJhNA.jpg> ;
+                                                       foaf:family_name "Kenny" ;
+                                                       foaf:givenname "Eva" ;
+                                                       foaf:homepage <https://www.linkedin.com/in/eva-kenny-lowther-4b723793/> ;
+                                                       foaf:interest "data science" ,
+                                                                     "project management" ;
+                                                       foaf:mbox "e.r.kenny@uva.nl" ;
+                                                       foaf:status "project manager" ;
+                                                       foaf:title "Dr." ;
+                                                       foaf:topic_interest "I am project manager for Amsterdam Data Science a collaboration of the Amsterdam based knowledge institutes (AUAS, CWI, UvA and VU)." .
+
+
+###  file:/Users/finnpotason/Programming/FOAF/krr.rdf#finn
+<file:/Users/finnpotason/Programming/FOAF/krr.rdf#finn> rdf:type owl:NamedIndividual ,
+                                                                 foaf:Person ;
+                                                        foaf:currentProject "Meastrograph" ;
+                                                        foaf:depiction <https://potason.github.io/images/cthulu.jpeg> ;
+                                                        foaf:family_name "Wang" ;
+                                                        foaf:givenname "Shuai" ;
+                                                        foaf:homepage <https://potason.github.io/> ;
+                                                        foaf:interest "knowledge graph" ,
+                                                                      "logic" ,
+                                                                      "machine learning" ;
+                                                        foaf:mbox "s2.wang@vu.nl" ;
+                                                        foaf:nick "Finn Potason" ;
+                                                        foaf:status "phd" ;
+                                                        foaf:title "Mr" ;
+                                                        foaf:topic_interest "I am a new PhD student following Prof. Frank van Harmelen. I am working on Machine Learning on large Knowledge Graphs." .
+
+
+###  file:/Users/finnpotason/Programming/FOAF/krr.rdf#frank
+<file:/Users/finnpotason/Programming/FOAF/krr.rdf#frank> rdf:type owl:NamedIndividual ,
+                                                                  foaf:Person ;
+                                                         foaf:currentProject "Meastrograph" ;
+                                                         foaf:depiction <http://iswc2011.semanticweb.org/uploads/pics/frank-van-harmelen_03.jpg> ;
+                                                         foaf:family_name "van Harmelen" ;
+                                                         foaf:givenname "Frank" ;
+                                                         foaf:homepage <http://www.cs.vu.nl/~frank.van.harmelen/> ;
+                                                         foaf:interest "knowledge graph" ,
+                                                                       "knowledge representation" ,
+                                                                       "medical ontology" ;
+                                                         foaf:mbox "Frank.van.Harmelen@vu.nl" ;
+                                                         foaf:status "professor" ;
+                                                         foaf:title "Prof." ;
+                                                         foaf:topic_interest "Frank van Harmelen (1960) is a professor in Knowledge Representation & Reasoning in the Computer Science department (Faculty of Science) at the Vrije Universiteit Amsterdam. After studying mathematics and computer science in Amsterdam, he moved to the Department of AI in Edinburgh, where he was awarded a PhD. In 1995 he joined the AI research group at the Vrije Universiteit Amsterdam, where he now leads the Knowledge Representation and Reasoning Group." .
+
+
+###  file:/Users/finnpotason/Programming/FOAF/krr.rdf#peter
+<file:/Users/finnpotason/Programming/FOAF/krr.rdf#peter> rdf:type owl:NamedIndividual ,
+                                                                  foaf:Person ;
+                                                         foaf:currentProject "AAA Datascience" ,
+                                                                             "Meastrograph" ;
+                                                         foaf:depiction <http://amsterdamdatascience.nl/wp-content/uploads/sites/12/2016/03/peter_bloem_tcm210-703537.jpg> ;
+                                                         foaf:family_name "Bloem" ;
+                                                         foaf:givenname "Peter" ;
+                                                         foaf:homepage <http://www.peterbloem.nl/> ;
+                                                         foaf:interest "deep learning" ,
+                                                                       "knowledge graph" ,
+                                                                       "kolmogorov complexity" ,
+                                                                       "machine learning" ,
+                                                                       "minimum description length" ;
+                                                         foaf:mbox "vu@peterbloem.nl" ;
+                                                         foaf:status "postdoc" ;
+                                                         foaf:title "Dr." ;
+                                                         foaf:topic_interest "I am a postdoc in the KR&R group. I am interested in the application of machine learning methods to knowledge graphs." .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#mojca
+<http://www.co-ode.org/ontologies/ont.owl#mojca> rdf:type owl:NamedIndividual ,
+                                                          foaf:Person ;
+                                                 foaf:depiction <https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/005/075/250/01a576c.jpg> ;
+                                                 foaf:family_name "Lovrenčak" ;
+                                                 foaf:givenname "Mojca" ;
+                                                 foaf:homepage <https://www.cs.vu.nl/en/about-the-department/support_staff/lovrencak/index.aspx> ;
+                                                 foaf:mbox "m.lovrencak@vu.nl" ;
+                                                 foaf:status "secretary" ;
+                                                 foaf:title "Mrs." ;
+                                                 foaf:topic_interest "I am the secretary of the KR&R group. Feel free to contact me if you cannot find specialists in your topic(s)." .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

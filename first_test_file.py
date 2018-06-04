@@ -1,5 +1,6 @@
 import requests
 import json
+import pprint
 
 data = {"data" : "24.3"}
 data_json = json.dumps(data)
@@ -10,12 +11,12 @@ data_json = json.dumps(data)
 headers = {'Accept': 'application/json'}
 
 resp_name = requests.get("https://api.elsevier.com/content/author/author_id/7004322609")
-if resp.status_code != 200:
+if resp_name.status_code != 200:
     # This means something went wrong.
     print('life is hard')
     # raise ApiError('GET /tasks/ {}'.format(resp_name.status_code))
 
-print (resp)
+pprint.pprint (resp_name)
 # print (resp_name.status_code)
 
 # response_name = resp_name.json()
